@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="lib/css/icomoon.css">
   <link rel="stylesheet" href="lib/css/stack.css">
   <link rel="stylesheet" href="lib/css/sliders.css">
-
   <!-- For demo purposes only -->
   <style type="text/css">
 
@@ -29,33 +28,95 @@
     font-weight: 200;
     margin: 0.2em 0;
   }
-
   p {
     color: #999;
     margin-bottom: 1em;
+    font-size: 1.5em
   }
-
   .center-me {
     text-align: center;
   }
   </style>
+
+  <script type="text/javascript">
+  var imageURLs = [
+       "ppl/img1.png"
+     , "ppl/img2.png" 
+     , "ppl/img3.png"
+     , "ppl/img4.png"     
+     , "ppl/img5.png" 
+     , "ppl/img6.png"
+     , "ppl/img7.png" 
+     , "ppl/img8.png"
+     , "ppl/img9.png"     
+     , "ppl/img10.png" 
+     , "ppl/img11.png"
+     , "ppl/img12.png" 
+     , "ppl/img13.png"
+     , "ppl/img14.png"     
+     , "ppl/img15.png" 
+     , "ppl/img16.png"
+     , "ppl/img17.png" 
+     , "ppl/img18.png"
+     , "ppl/img19.png"     
+     , "ppl/img20.png" 
+     , "ppl/img21.png"
+     , "ppl/img22.png" 
+     , "ppl/img23.png"
+     , "ppl/img24.png"     
+     , "ppl/img25.png" 
+     , "ppl/img26.png"
+     , "ppl/img27.png" 
+     , "ppl/img28.png"
+     , "ppl/img29.png"     
+     , "ppl/img30.png" 
+     , "ppl/img31.png"
+     , "ppl/img32.png" 
+     , "ppl/img33.png"
+     , "ppl/img34.png"     
+     , "ppl/img35.png" 
+     , "ppl/img36.png"
+     , "ppl/img37.png" 
+     , "ppl/img38.png"
+     , "ppl/img39.png"
+     , "ppl/img40.png"
+     , "ppl/img41.png"
+     , "ppl/img42.png" 
+     , "ppl/img43.png"
+     , "ppl/img44.png"     
+     , "ppl/img45.png" 
+     , "ppl/img46.png"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+  </script>
+
 </head>
 <body ontouchstart="">
 
   <div class="page">
     <header class="action-bar fixed-top">
       <a href="index.html" class="app-icon action">
-        <i class="icon-fries"></i>
+        <img src="lib/img/ico/apple-touch-icon-37-precomposed.png">
+<!--         <i class="icon-fries"></i> -->
       </a>
-      <h1 class="title">Play Lick!</h1>
+      <h1 class="title">   Play Lick!</h1>
     </header>
 
-    <div class="content inset">
-      
-      <!-- <h1 class="intro">Kayla Early Presents...</h1> -->
+    <div class="content inset">      
       <div align="center">
-      <img class="shuffle" width="350px" height="400px" src="" alt="">
+        <p> Here's your target - Lick 'em!</p>
       </div>
+      <div align="center">
+      <script type="text/javascript">
+        document.write(getImageTag());
+      </script>
+    </div>
       <br>
       <div align="center">
       <button class="btn" onclick="window.location.href='complete.html'">Challenge Complete</button> <br>
@@ -68,8 +129,5 @@
   <script src="lib/js/action-bars.js"></script>
   <script src="lib/js/spinners.js"></script>
   <script src="lib/js/tabs.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script src="js/jquery.robwalsh.randomImageOnload.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

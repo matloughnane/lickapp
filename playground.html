@@ -23,52 +23,71 @@
   <link rel="stylesheet" href="lib/css/sliders.css">
 
   <!-- For demo purposes only -->
-  <style type="text/css">
-
+  <style type="text/css"> 
   h1.intro {
     font-weight: 200;
     margin: 0.2em 0;
   }
-
   p {
     color: #999;
     margin-bottom: 1em;
   }
-
   .center-me {
     text-align: center;
   }
   </style>
+
+  <script type="text/javascript">
+  var imageURLs = [
+       "ppl/img1.png"
+     , "ppl/img2.png" 
+     , "ppl/img3.png"
+     , "ppl/img4.png"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+  </script>
+
 </head>
 <body ontouchstart="">
 
   <div class="page">
     <header class="action-bar fixed-top">
-      <a href="#" class="app-icon action">
-        <img src="lib/img/ico/apple-touch-icon-37-precomposed.png">
+      <a href="index.html" class="app-icon action">
+        <i class="icon-fries"></i>
       </a>
-      <h1 class="title">Lick!</h1>
+      <h1 class="title">Play Lick!</h1>
     </header>
 
     <div class="content inset">
-      
+      <div align="center">
+        <p> Here's your target - Lick 'em!</p>
+      </div>     
       <!-- <h1 class="intro">Kayla Early Presents...</h1> -->
       <div align="center">
-      <img width="300px" height="250px" src="lib/img/tongue.png">
-      </div>
+      <script type="text/javascript">
+        document.write(getImageTag());
+      </script>
+    </div>
       <br>
       <div align="center">
-      <button class="btn" onclick="window.location.href='play.html'">Play</button> <br>
-      <button class="btn" onclick="window.location.href='instructions.html'">Instructions</button> <br>
-      <button class="btn" onclick="window.location.href='about.html'">About</button> <br>
+      <button class="btn" onclick="window.location.href='complete.html'">Challenge Complete</button> <br>
+      <button class="btn" onclick="window.location.href='forfeit.html'">Forfeit</button> <br>
       </div>
     </div>
   </div>
-
 
   <script src="lib/js/stack.js"></script>
   <script src="lib/js/action-bars.js"></script>
   <script src="lib/js/spinners.js"></script>
   <script src="lib/js/tabs.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="js/jquery.robwalsh.randomImageOnload.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

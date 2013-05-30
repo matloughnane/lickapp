@@ -33,29 +33,51 @@
   p {
     color: #999;
     margin-bottom: 1em;
+    font-size: 1.5em;
   }
 
   .center-me {
     text-align: center;
   }
   </style>
+
+    <script type="text/javascript">
+  var imageURLs = [
+       "drnk/img1.png"
+     , "drnk/img2.png" 
+     , "drnk/img3.png"
+     , "drnk/img4.png"
+     , "drnk/img5.png"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+  </script>
+
 </head>
 <body ontouchstart="">
 
   <div class="page">
     <header class="action-bar fixed-top">
       <a href="index.html" class="app-icon action">
-        <i class="icon-fries"></i>
+        <img src="lib/img/ico/apple-touch-icon-37-precomposed.png">
       </a>
       <h1 class="title">Forfeit!</h1>
     </header>
 
 
     <div class="content inset">
-      
-      <!-- <h1 class="intro">Kayla Early Presents...</h1> -->
       <div align="center">
-      <img class="shuffle" width="350px" height="400px" src="" alt="">
+        <p> Here's your Forfeit - Drink It!</p>
+      </div>
+      <div align="center">
+        <script type="text/javascript">
+          document.write(getImageTag());
+        </script>
       </div>
       <br>
       <div align="center">
@@ -68,8 +90,5 @@
   <script src="lib/js/action-bars.js"></script>
   <script src="lib/js/spinners.js"></script>
   <script src="lib/js/tabs.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script src="js/jquery.robwalsh.randomImageOnload2.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
