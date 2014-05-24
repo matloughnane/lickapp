@@ -87,7 +87,7 @@ video {
 html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-  background-color: #000;
+/*  background-color: #000;*/
   padding-bottom: 1px;
 }
 
@@ -103,6 +103,7 @@ body {
   font: 16px/1.6 "Roboto", sans-serif;
   color: #fff;
   background-color: #000;
+  background-image: url(../../old_img/patterns/pw_maze_black.png);
   -webkit-transform: translateZ(0px);
           transform: translateZ(0px);
 }
